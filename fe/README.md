@@ -1,3 +1,44 @@
+## Setup
+
+Install the frontend dependencies from this directory:
+
+```powershell
+npm install
+```
+
+Start the mock API in one terminal:
+
+```powershell
+node mock-api.js
+```
+
+The mock API runs at `http://localhost:4000`. Keep this terminal running.
+
+Start the React frontend in a second terminal:
+
+```powershell
+npm run dev
+```
+
+Open the URL printed by Vite, usually `http://localhost:5173`. Requests from the frontend to `/api` are proxied to the mock API.
+
+## Other Commands
+
+Run the test suite:
+
+```powershell
+npm run test
+```
+
+Create a production build and run TypeScript checks:
+
+```powershell
+npm run build
+```
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
 ## Context
 
 An operations specialist receives enrollment submissions from several employer groups. Most are processed automatically, but some need a human to review missing or conflicting information.
